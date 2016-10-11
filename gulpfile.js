@@ -14,9 +14,6 @@ gulp.task('templates', function() {
     .pipe(defineModule('amd'))
     .pipe(dest('src/templates/:name.js'))
     .pipe(gulp.dest('./src/'))
-    //.pipe(dest('templates/:name.js'))
-    // Write the output into the templates folder
-    //.pipe(gulp.dest('./'));
 });
 
 // Default Task
