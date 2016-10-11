@@ -3,7 +3,7 @@
   'use strict';
 
   require({
-    // app entry point, the application "bootstrap"
+    // App entry point. The application "bootstrap"
     deps: ["../main"],
     baseUrl: 'js/libs',
     paths: {
