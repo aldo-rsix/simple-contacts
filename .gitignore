@@ -1,0 +1,5 @@
+$ cat .gitignore
+*.[oa]
+*~
+node_modules/
+src/js/libs

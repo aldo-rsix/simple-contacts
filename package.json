@@ -1,0 +1,29 @@
+{
+  "name": "helloworld",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower install --force-latest"
+  },
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "async": "~2.0.0-rc.5",
+    "validator": "~5.2.0",
+    "redis": "~2.6.0-2",
+    "express": "~4.13.4",
+    "socket.io": "~1.4.6",
+    "bower": "~1.7.9",
+    "wiredep": "2.2.2"
+  },
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-declare": "^0.3.0",
+    "gulp-define-module": "^0.1.4",
+    "gulp-dest": "^0.2.3",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-wrap": "^0.13.0"
+  }
+}
