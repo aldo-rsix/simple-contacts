@@ -9,11 +9,15 @@ define([
     'use strict';
 
     return Mn.LayoutView.extend({
+      tagName: 'div',
+      attributes: {
+        'id': 'app-container',
+      },
       template: AppLayoutTemplate,
       regions: {
-        header: "header",
-        content: "#content",
-        footer: "footer"
+        header: 'header',
+        content: '#content',
+        footer: 'footer'
       },
       onBeforeShow: function() {
         this.showChildView('header', new HeaderView());

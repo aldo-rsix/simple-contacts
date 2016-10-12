@@ -8,6 +8,7 @@ define([
     'use strict';
 
     return Mn.LayoutView.extend({
+      className: 'container',
       template: HeaderTemplate,
       regions: {
         menu: "#menu"
