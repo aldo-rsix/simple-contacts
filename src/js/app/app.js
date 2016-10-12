@@ -1,21 +1,22 @@
-define(['backbone', 'marionette', 'app/home/views/HomeView', 'bootstrap'], function(Backbone, Mn, HomeView) {
-    'use strict';
+define(['backbone', 'marionette', 'app/commons/views/AppLayoutView', 'bootstrap'], function(Backbone, Mn, AppLayoutView) {
 
-    var App = Marionette.Application.extend({
-        initialize: function(options) {
-            console.log('initialize');
-        },
-        onStart: function() {
-            this.getRegion('content').show(new HomeView());
-            Backbone.history.start();
-        }
-    });
+  'use strict';
 
-    var app = new App();
+  var App = Marionette.Application.extend({
+    initialize: function(options) {
+      console.log('initialize');
+    },
+    onStart: function() {
+      this.getRegion('app-container').show(new AppLayoutView());
+      Backbone.history.start();
+    }
+  });
 
-    app.addRegions({
-        content: 'body'
-    });
+  var app = new App();
 
-    return app;
+  app.addRegions({
+    'app-container': 'body'
+  });
+
+  return app;
 });
