@@ -1,13 +1,10 @@
-define(['backbone', 'marionette', 'app/commons/views/AppLayoutView', 'bootstrap'], function(Backbone, Mn, AppLayoutView) {
+define(['backbone', 'marionette', 'app/commons/views/AppLayoutView', 'bootstrap'], function(Backbone, Mn, AppView) {
 
   'use strict';
 
   var App = Marionette.Application.extend({
-    initialize: function(options) {
-      console.log('initialize');
-    },
     onStart: function() {
-      this.getRegion('app-container').show(new AppLayoutView());
+      this.getRegion('app-container').show(new AppView());
       Backbone.history.start();
     }
   });
