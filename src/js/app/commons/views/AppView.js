@@ -4,7 +4,7 @@ define([
     'app/commons/views/HeaderView',
     'app/commons/views/FooterView'
   ],
-  function(Mn, AppLayoutTemplate, HeaderView, FooterView) {
+  function(Mn, AppTemplate, HeaderView, FooterView) {
 
     'use strict';
 
@@ -13,7 +13,7 @@ define([
       attributes: {
         'id': 'app-container',
       },
-      template: AppLayoutTemplate,
+      template: AppTemplate,
       regions: {
         header: 'header',
         content: '#content',
