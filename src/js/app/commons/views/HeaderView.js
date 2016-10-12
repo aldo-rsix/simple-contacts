@@ -21,7 +21,7 @@ define([
 
         var favMenuItem = new MenuItem({
           name: 'Favorities',
-          link: '#home'
+          link: '#fav'
         });
 
         var allMenuItem = new MenuItem({
