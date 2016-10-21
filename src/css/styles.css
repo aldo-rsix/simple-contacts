@@ -18,6 +18,10 @@ body {
   background-color: #f0f0f0;
 }
 
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .navbar-toggle .icon-bar {
     background-color: #337ab7;
 }

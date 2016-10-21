@@ -3,7 +3,7 @@ define(['marionette', 'app/home/views/HomeView', 'app/app'], function(Mn, HomeVi
   'use strict';
 
   var homeController = {
-    someMethod: function() {
+    someMethod: function(arg1, arg2) {
       app.getAppView().showChildView('content', new HomeView());
     }
   };
@@ -11,7 +11,7 @@ define(['marionette', 'app/home/views/HomeView', 'app/app'], function(Mn, HomeVi
   return Marionette.AppRouter.extend({
     controller: homeController,
     appRoutes: {
-      "home": "someMethod"
+      ":module(/*subroute)": "someMethod"
     }
   });
 });
